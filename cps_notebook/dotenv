@@ -1,0 +1,40 @@
+#
+# Copyright (C) 2025 The Authors
+# All rights reserved.
+#
+# This file is part of cps_notebook.
+#
+# cps_notebook is free software: you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published
+# by the Free Software Foundation.
+#
+# cps_notebook is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with cps_notebook. If not, see http://www.gnu.org/licenses/
+#
+
+# Copy this file to ./.env and ./src/cps_notebook/.env and reconfigure the variables
+
+WB_URL="https://mediawiki.example.com/"
+WB_USERNAME="username"
+WB_PASSWORD="botpass"
+
+SPARQL_URL="https://query.example.com/sparql"
+SPARQL_PREFIX="PREFIX wd: <https://wikibase.example.com/entity/>
+PREFIX wdt: <https://wikibase.example.com/prop/direct/>
+PREFIX p: <https://wikibase.example.com/prop/>
+PREFIX ps: <https://wikibase.example.com/prop/statement/>
+PREFIX pq: <https://wikibase.example.com/prop/qualifier/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bd: <http://www.bigdata.com/rdf#>"
+
+PROJECT_DIR="./demo"
+
+LOGGING="DEBUG"
+
+DB_FILE="TODO"

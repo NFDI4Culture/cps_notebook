@@ -1,0 +1,11 @@
+SELECT ?item ?itemLabel WHERE {
+
+  # item - part of (or part of a part of a part ...) - Stuttgart, Schloss Solitude , and
+  ?item wdt:P3+ wd:Q68 ;
+        # instance of - painting
+        wdt:P1 wd:Q6 . # Q8 for all rooms
+
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "de"
+  }
+}

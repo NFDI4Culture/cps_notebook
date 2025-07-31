@@ -1,0 +1,8 @@
+SELECT ?item ?itemLabel WHERE {
+  # item - instance of - structure
+  ?item wdt:P1 wd:Q1 . # Q8 for list of rooms
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "de"
+  }
+}

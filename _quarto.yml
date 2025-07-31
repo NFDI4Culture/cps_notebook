@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "WB2JN Render Tests"
+  author: "Test Author"
+  date: today
+  chapters:
+    - index.qmd
+    - cps_notebook/src/cps_notebook/query1.ipynb
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  downloads: [pdf]
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

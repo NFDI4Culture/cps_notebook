@@ -1,0 +1,9 @@
+SELECT ?item ?itemLabel WHERE {
+
+  # item - part of (or part of a part of a part ...) - Stuttgart, Schloss Solitude
+  ?item wdt:P3+ wd:Q68 .
+
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language "de"
+  }
+}

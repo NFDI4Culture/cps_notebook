@@ -1,0 +1,68 @@
+#
+# Copyright (C) 2025 The Authors
+# All rights reserved.
+#
+# This file is part of cps_notebook.
+#
+# cps_notebook is free software: you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published
+# by the Free Software Foundation.
+#
+# cps_notebook is distributed in the hope that it will be
+# useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with cps_notebook. If not, see http://www.gnu.org/licenses/
+#
+
+# https://flit.pypa.io/en/stable/pyproject_toml.html
+
+[project]
+name = "cps_notebook"
+authors = [
+	{ name="Darron Broad" },
+]
+readme = "README.md"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent",
+]
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.9"
+dependencies = [
+	"WikibaseIntegrator>=0.12",
+	"lxml",
+	"jinja2",
+	"jupyter",
+	"notebook"
+]
+dynamic = [
+        "version",
+        "description"
+]
+
+[project.urls]
+Documentation = "https://wiki.kewl.org/projects:notebook"
+#Source = "https://hg.kewl.org/pub/cps_notebook"
+
+[project.scripts]
+sparql = "cps_notebook:sparql.main"
+#sql = "cps_notebook:sql.main"
+wb = "cps_notebook:wb.main"
+
+[tool.flit.sdist]
+include = [
+	"dotenv",
+	"Makefile",
+	"TODO.md"
+]
+exclude = [
+	"src/cps_notebook/.env",
+	"src/cps_notebook/.ipynb_checkpoints"
+]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"

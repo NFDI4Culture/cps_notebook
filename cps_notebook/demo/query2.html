@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+  {% for row in list %}
+  <p>item={{ row['item'] }} itemLabel={{ row['itemLabel'] }}</p>
+  {% endfor %}
+</body>
+
+</html>
+
+<!--
+vim: shiftwidth=4 tabstop=2 softtabstop=2 expandtab
+-->

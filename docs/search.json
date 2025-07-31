@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "cps_notebook/src/cps_notebook/query1.html",
+    "href": "cps_notebook/src/cps_notebook/query1.html",
+    "title": "1  DEVELOPMENT ONLY",
+    "section": "",
+    "text": "from importlib import reload\nimport cps_notebook.sparql\nreload(cps_notebook.sparql)\n\n# SPARQL QUERY OBJECT\nfrom cps_notebook.sparql import SPARQL\ns = SPARQL(\"query1\")\n\n# HTML TEMPLATE VIEW\nfrom IPython.display import HTML\nHTML(s.html())\n\n\n\n\n\n    \n    \n    \n    \n\n\n\n  \n  p=https://wikibase.kewl.org/prop/direct/P1 o=https://wikibase.kewl.org/entity/Q8\n  \n  p=https://wikibase.kewl.org/prop/direct/P3 o=https://wikibase.kewl.org/entity/Q139\n  \n  p=https://wikibase.kewl.org/prop/direct/P4 o=https://wikibase.kewl.org/entity/Q142\n  \n  p=https://wikibase.kewl.org/prop/direct/P7 o=https://www.deckenmalerei.eu/fe9592b9-a451-44ff-9f4b-eabe23c8a979\n  \n  p=https://wikibase.kewl.org/prop/P1 o=https://wikibase.kewl.org/entity/statement/Q140-A892FB78-A479-47D7-85A1-8FFD28EFB637\n  \n  p=https://wikibase.kewl.org/prop/P3 o=https://wikibase.kewl.org/entity/statement/Q140-B2B5E01D-DAA6-45BA-B793-BA427C930B51\n  \n  p=https://wikibase.kewl.org/prop/P4 o=https://wikibase.kewl.org/entity/statement/Q140-C05EDADD-439A-4414-9CAE-C109FE9B8656\n  \n  p=https://wikibase.kewl.org/prop/P7 o=https://wikibase.kewl.org/entity/statement/Q140-3C848A31-9E9F-44C2-B8DC-EF8BB19CB6E1\n  \n  p=http://schema.org/version o=363\n  \n  p=http://schema.org/dateModified o=2025-07-11T19:21:22Z\n  \n  p=http://schema.org/description o=cps_deckenmalerei.db, 180\n  \n  p=http://www.w3.org/2000/01/rdf-schema#label o=Das Eckzimmer\n  \n  p=http://wikiba.se/ontology#statements o=4\n  \n  p=http://wikiba.se/ontology#sitelinks o=0\n  \n  p=http://wikiba.se/ontology#identifiers o=0\n  \n  p=http://wikiba.se/ontology#timestamp o=2025-07-11T19:40:11Z",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>query1.html</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WB2JN Render Tests",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

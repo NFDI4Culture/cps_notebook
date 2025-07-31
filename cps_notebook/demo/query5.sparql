@@ -1,0 +1,7 @@
+SELECT ?item ?photo ?creator WHERE {
+
+  ?item p:P6 ?statement . # has photo ?statement (triple)
+
+  ?statement ps:P6 ?photo . # ?statement (triple) has value ?photo
+  OPTIONAL { ?statement pq:P11 ?creator . } # ?statement (triple) has (might have) qualifier ?creator
+}

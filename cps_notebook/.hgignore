@@ -1,0 +1,11 @@
+# use glob syntax.
+syntax: glob
+
+*.pyc
+*~
+*.swp
+.env
+src/cps_notebook/.ipynb_checkpoints
+
+# switch to regexp syntax.
+syntax: regexp
